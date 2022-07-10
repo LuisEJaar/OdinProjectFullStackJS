@@ -1,0 +1,20 @@
+body, .logo div{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    width: 70rem;
+    height: 100vh;
+    border: 1px solid red;
+    background-image: src("background.avif");
+    background-size: contain;
+}
+
+.logo div {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.logo img {
+    height: 8rem;
+}
