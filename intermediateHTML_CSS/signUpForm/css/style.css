@@ -1,20 +1,71 @@
-body, .logo div{
+*{
+    box-sizing: border-box;
+}
+
+body, .logo div, .forms{
     display: flex;
     flex-direction: row;
 }
 
+form {
+    margin-top: 2rem;
+    box-shadow: 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: none;
+    box-shadow: inset;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 2px 5px rgba(128, 128, 128, 0.2), -1px -1px rgba(128, 128, 128, 0.3);
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+}
+
 .logo {
-    width: 70rem;
+    width: 70vw;
     height: 100vh;
-    border: 1px solid red;
-    background-image: src("background.avif");
-    background-size: contain;
+    background-image: url("../assets/background.jpg");
+    background-size: cover;
+    
 }
 
 .logo div {
+    margin-top: 50%;
     background-color: rgba(0,0,0,0.3);
+    line-height: 8rem;
+    color: white;
+    font-size: 6rem;
+    justify-content: center;
 }
 
 .logo img {
     height: 8rem;
+    margin-right: 1rem;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+input:focus {
+    outline: 1px solid blue;
+}
+
+section {
+    background-color: rgb(249, 250, 251);
+    padding-top: 5rem;
+}
+
+section > div {
+    padding-left: 3rem;
+    font-size: 1.2rem;
+    width: 80%;
 }
