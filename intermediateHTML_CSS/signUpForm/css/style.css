@@ -15,6 +15,7 @@ form {
 }
 
 fieldset {
+    width:99.5%;
     border: none;
     box-shadow: inset;
     background-color: white;
@@ -56,7 +57,7 @@ input {
 }
 
 input:focus {
-    outline: 1px solid blue;
+    outline: 1px solid #E5E7EB;
 }
 
 section {
@@ -65,7 +66,39 @@ section {
 }
 
 section > div {
-    padding-left: 3rem;
+    padding-left: 1rem;
     font-size: 1.2rem;
     width: 80%;
+}
+
+fieldset > span {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+input:invalid {
+    outline: 1px solid red;
+}
+
+.rh {
+    margin-left: 2rem;
+}
+
+.button, form span {
+    margin-top: 0.8rem;
+    margin-left: 1rem;
+}
+
+button {
+    padding: 0.5rem;
+    background-color: #596D48;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+
+.form > div {
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
 }
