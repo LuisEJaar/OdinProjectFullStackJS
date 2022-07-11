@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    user-select: none;
 }
 
 body, .logo div, .forms{
@@ -34,7 +35,7 @@ fieldset {
     height: 100vh;
     background-image: url("../assets/background.jpg");
     background-size: cover;
-    
+    user-select: none;
 }
 
 .logo div {
