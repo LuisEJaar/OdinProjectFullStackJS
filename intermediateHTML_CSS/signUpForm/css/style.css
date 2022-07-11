@@ -3,16 +3,18 @@
     user-select: none;
 }
 
-body, .logo div, .forms{
+body, .logo div, .forms, form {
     display: flex;
     flex-direction: row;
 }
 
-form {
-    margin-top: 2rem;
-    box-shadow: 1px;
+form, fieldset, .form div {
     display: flex;
     flex-direction: column;
+}
+
+form {
+    margin-top: 1.8rem;
 }
 
 fieldset {
@@ -20,14 +22,7 @@ fieldset {
     border: none;
     box-shadow: inset;
     background-color: white;
-    display: flex;
-    flex-direction: column;
     box-shadow: 5px 2px 5px rgba(128, 128, 128, 0.2), -1px -1px rgba(128, 128, 128, 0.3);
-}
-
-.form div {
-    display: flex;
-    flex-direction: column;
 }
 
 .logo {
@@ -35,7 +30,6 @@ fieldset {
     height: 100vh;
     background-image: url("../assets/background.jpg");
     background-size: cover;
-    user-select: none;
 }
 
 .logo div {
@@ -67,9 +61,12 @@ section {
 }
 
 section > div {
-    padding-left: 1rem;
     font-size: 1.2rem;
     width: 80%;
+}
+
+section > div > span, section > div > p, .button, form span {
+    margin-left: 1rem;
 }
 
 fieldset > span {
@@ -86,9 +83,8 @@ input:invalid {
     margin-left: 2rem;
 }
 
-.button, form span {
+.button, form span, .form > div{
     margin-top: 0.8rem;
-    margin-left: 1rem;
 }
 
 button {
@@ -100,6 +96,5 @@ button {
 }
 
 .form > div {
-    margin-top: 0.8rem;
     margin-bottom: 0.5rem;
 }
